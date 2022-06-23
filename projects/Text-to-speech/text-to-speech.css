@@ -1,0 +1,39 @@
+
+.range{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-range{
+    width: 100px;
+}
+
+.textbox{
+    resize: none;
+}
+
+#voice-select{
+    width: 200px;
+    height: auto;
+}
+
+
+.custom-shape-divider-top-1651739633 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1651739633 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1651739633 .shape-fill {
+    fill: #808080;
+}

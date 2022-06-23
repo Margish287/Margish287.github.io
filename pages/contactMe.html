@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margish | contact</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contactMe.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__logo" href="/index.html"><img src="/assets/Logo.png" style="width: 70px; height: 70px;" alt="logo"></a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="/assets/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="../index.html">Home</a></li>
+                <li class="nav__item"><a href="../pages/aboutMe.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="block block--dark block--skewed-right">
+        <h2 class="heading form__heading">
+            Contact <span class="accent">ME</span>
+        </h2>
+        <form data-aos="fade-up" name="contact_form" class="form" action="" method="post" onsubmit="validateUser()">
+            <div data-aos="fade-right" class="grid__form">
+                <label class="label" for="name">name</label>
+                <input name="name" class="input" type="text" placeholder="Enter Your Name..." autocomplete="off" required>
+            </div>
+            <div data-aos="fade-left" class="grid__form">
+                <label class="label" for="email">email</label>
+                <input name="email" class="input" type="text" placeholder="xyz@example.com" autocomplete="off" required>
+            </div>
+            <div data-aos="fade-right" class="grid__form">
+                <label class="label" for="phone">phone</label>
+                <input name="phone" class="input" type="number" placeholder="Enter Phone Number" autocomplete="off" required>
+            </div>
+
+            <div data-aos="zoom-in" class="btn--center">
+                <button type="submit" class="btn btn--accent">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="block block--dark footer block--top--skewed-right" id="footer">
+        <div class="container footer__sections">
+            <div class="flex footer__logo">
+                <a href="#top">
+                    <img class="main-logo" src="/assets/logo2.png" alt="Round logo with letter M and P">
+                </a>
+                <div class="social-links">
+                    <a href="https://instagram.com/margish.patel.3102" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="../assets/sprite2.svg#instagram-brands"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Margish287" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="../assets/sprite2.svg#github-brands"></use>
+                        </svg>
+                    </a>
+                    <a href="mailto:margishpatel287@gmail.com">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="../assets/sprite2.svg#envelope-solid"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/margish-patel/" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="../assets/sprite2.svg#linkedin-in-brands"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__logo footer__copyright">Copyright &copy 2022, Margish Patel</p>
+        </div>
+    </footer>
+
+    <script src="../js/contactUs.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

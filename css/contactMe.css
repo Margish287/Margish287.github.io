@@ -1,0 +1,81 @@
+:root {
+    --color-priamry: #3584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-heading: #1b0760;
+    --color-body: #918ca4;
+    --color-border: #ccc;
+    --color-white: #fff;
+    /*dark shades*/
+    --color-primary-darker: rgb(21, 108, 248);
+    --color-secondary-darker: #0092ac;
+    --color-body-darker: #5c5577;
+    /*light shades*/
+    --color-primary-light: #6b9ff3;
+    --color-secondary-light: #7eecff;
+    --border-radius: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-priamry);
+}
+
+.footer__brand img {
+    width: 200px;
+    height: auto;
+}
+
+.grid__form .input {
+    padding: 1rem 2rem;
+}
+
+
+/* form */
+
+.label {
+    color: var(--color-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+.label::after {
+    content: " :";
+}
+
+.form__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.grid__form .label {
+    color: #f3f3f3;
+}
+
+.grid__form input::placeholder {
+    font-weight: 700;
+}
+
+
+/* block */
+
+.block {
+    margin-top: -0.1rem;
+}
+
+
+/* footer */
+
+@media screen and (min-width: 768px) {
+    .footer__logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

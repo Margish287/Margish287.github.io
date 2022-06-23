@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a Web Developer, i started learning web development when i was in 2nd year in the college. Now i have complete knowledge of developing a complete websites & web-application with latest technologies.">
+    <meta property="og:title" content="Margish | Portfolio">
+    <meta proerty="og:type" content="portfolio website">
+    <!-- <meta proerty="og:image" content="#"> -->
+    <meta proerty="og:url" content="https://margish287.github.io/">
+    <title>Margish | Portfolio</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <header id="top">
+        <nav class="nav collapsible">
+            <a class="nav__logo" href="/"><img src="assets/logo.png" style="width:70px; height: 70px;" alt="logo of website"></a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="assets/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="../pages/aboutMe.html">About me</a></li>
+                <li class="nav__item"><a href="../pages/contactMe.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading text-focus-in"><span class="hero__content greeting">Hi</span></h1>
+                <h1 class="block__heading text-focus-in"><span class="hero__content im">i'm</span></h1>
+                <h1 class="block__heading text-focus-in"><span class="hero__content name">Margish</span></h1>
+                <p class="hero__tagline">A Web Designer <span class="accent">&</span> Developer </p>
+                <a href="./pages/aboutMe.html" class="btn btn--accent btn--stretched">About me</a>
+            </header>
+            <img data-aos="zoom-in" class="hero__image" src="assets/portfolio.jpg" alt="hero image">
+        </div>
+    </section>
+
+    <section class="block container block-projects">
+        <header class="block__header">
+            <h2>Projects</h2>
+        </header>
+        <div class="grid grid--1x2">
+            <div class="project">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="project__name">Text to Speech</h3>
+                        <span class="project__description">
+                            App that can speak what you type !
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">HTML</li>
+                            <li class="list__item">responsive</li>
+                            <li class="list__item">JQuery</li>
+                            <li class="list__item">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <a class="project__checkout" href="./projects/text-to-speech.html" target="_blank">Check this Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="project__name">Speech to Text</h3>
+                        <span class="project__description">
+                            A simple Speech recognition app
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">HTML</li>
+                            <li class="list__item">responsive</li>
+                            <li class="list__item">JQuery</li>
+                            <li class="list__item">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <a class="project__checkout" href="./projects/speech-to-text.html" target="_blank">Check this Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="project__name">Color Fliper</h3>
+                        <span class="project__description">
+                            A color flipper app
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">HTML</li>
+                            <li class="list__item">responsive</li>
+                            <li class="list__item">JS</li>
+                            <li class="list__item">CSS</li>
+                        </ul>
+                    </div>
+                    <a class="project__checkout" href="./projects/Color_Flipper.html" target="_blank">Check this Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="project__name">Temp_Converter</h3>
+                        <span class="project__description">
+                            A Temprature convertor app
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">HTML</li>
+                            <li class="list__item">responsive</li>
+                            <li class="list__item">JavaScript</li>
+                            <li class="list__item">CSS</li>
+                        </ul>
+                    </div>
+                    <a class="project__checkout" href="./projects/Temp_Converter.html" target="_blank">Check this Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="block container block-plans">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Basic plan</h3>
+                        <span class="plan__price">$25</span>
+                        <span class="plan__billing-cycle">+tax </span>
+                        <span class="badge badge--primary badge--small">10% off</span>
+                        <span class="plan__description">
+                            Easy start on cloud
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">1 page website</li>
+                            <li class="list__item">Responsive</li>
+                            <li class="list__item">Simple design</li>
+                            <li class="list__item">delivery in 2-3 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Smart plan</h3>
+                        <span class="plan__price">$50</span>
+                        <span class="plan__billing-cycle">+tax </span>
+                        <span class="badge badge--primary badge--small">10% off</span>
+                        <span class="plan__description">
+                            Easy start on cloud
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">3 page website</li>
+                            <li class="list__item">Responsive</li>
+                            <li class="list__item">Intermidiate design</li>
+                            <li class="list__item">delivery in 4-5 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Smart++</h3>
+                        <span class="plan__price">$70</span>
+                        <span class="plan__billing-cycle">+tax </span>
+                        <span class="badge badge--primary badge--small">10% off</span>
+                        <span class="plan__description">
+                            Easy start on cloud
+                        </span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">5 page website</li>
+                            <li class="list__item">Responsive</li>
+                            <li class="list__item">Complex Design</li>
+                            <li class="list__item">delivery in 7-9 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="block container" id="skills">
+        <header class="block__header">
+            <h2>About my skills</h2>
+        </header>
+        <article data-aos="fade-right" class="grid grid--1x2 skills">
+            <div class="skills__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="assets/sprite.svg#computer"></use>
+                    </svg>
+                </span>
+                <h3 class="skills__heading">Front End Tech.</h3>
+                <p class="skills__para">I have a complete mastery in <span class="accent">HTML</span>, <span class="accent">CSS</span> and <span class="accent">JavaScript</span>. Currently learning about <span class="accent">React</span> and <span class="accent">React-native</span>.
+                    In addition i have learned about <span class="accent">bootstrap</span>, <span class="accent">tailwind</span>, <span class="accent">milligram</span> for better, faster and responsive web designs</p>
+                <a href="#backend" class="link-arrow">NEXT</a>
+            </div>
+            <img data-aos="zoom-in-left" class="skills__image" src="/assets/front-end.png" alt="image of application model">
+        </article>
+
+        <article class="grid grid--1x2 skills" id="backend">
+            <div class="skills__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="assets/sprite.svg#computer"></use>
+                    </svg>
+                </span>
+                <h3 class="skills__heading">Back End Tech.</h3>
+                <p class="skills__para">In Backend i mainly work in <span class="accent">NODE.js</span> environment. My backend technologies are <span class="accent">node</span>, <span class="accent">Express</span>, <span class="accent">Mongo(for Datebase)</span>. Sometimes
+                    i also work with <span class="accent">PHP</span> and <span class="accent">SQL(basic)</span> database. </p>
+                <a href="#design" class="link-arrow">NEXT</a>
+            </div>
+            <img class="skills__image" src="/assets/backend.png" alt="image of application model">
+        </article>
+
+        <article class="grid grid--1x2 skills" id="design">
+            <div class="skills__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="assets/sprite.svg#wordpress"></use>
+                    </svg>
+                </span>
+                <h3 class="skills__heading">Design Tools and Tech.</h3>
+                <p class="skills__para">I have intermediate skills in <span class="accent">Adobe Photoshop</span>, <span class="accent">Wordpress</span>, <span class="accent">Figma</span>, <span class="accent">Canva</span>. I use Photoshop for enhancing the picture quality and
+                    make it cleanner for smallest devices to largest computer screen.</p>
+                <a href="#development" class="link-arrow">NEXT</a>
+            </div>
+            <span class="accent"><img class="skills__image" src="/assets/web-design.png" alt="image of computer with pink background"></span>
+        </article>
+
+        <article class="grid grid--1x2 skills" id="development">
+            <div class="skills__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="assets/sprite.svg#settings"></use>
+                    </svg>
+                </span>
+                <h3 class="skills__heading">Development Tools and Tech.</h3>
+                <p class="skills__para">I use <span class="accent">Visual Studio</span> for code, <span class="accent">Git</span>, <span class="accent">Gitlab</span>, <span class="accent">GitHub</span>, <span class="accent">MongoDB compass</span> for handling database system,
+                    <span class="accent">Postman</span> for route handling in backend. </p>
+                <a href="#testemonial" class="link-arrow">NEXT</a>
+            </div>
+            <img class="skills__image" src="/assets/development.jpg" alt="image of application model">
+        </article>
+    </section>
+
+
+    <section class="block" data-aos="zoom-in" id="testemonial">
+        <header class="block__header">
+            <h2>What I think about <span class="accent">my work</span> and <span class="accent">my study</span>?</h2>
+        </header>
+        <div class="container">
+            <div class="card testemonial block--dark">
+                <div class="grid grid--1x2">
+                    <div class="testemonial__image">
+                        <img src="./assets/portfolio1.jpg" alt="Image of an author with smiling face">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--white icon--small">
+                                <use xlink:href="assets/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote class="quote">
+                        <p class="quote__text">I study what i like. I never push myself to complete any task because i know that what i start i never leave it undone !</p>
+                        <div class="media">
+                            <div class="media__image">
+                                <svg class="icon icon-primary quote__line">
+                                    <use xlink:href="assets/sprite.svg#line"></use>
+                                </svg>
+                            </div>
+                            <div class="media__body">
+                                <h3 class="media__title quote__author">
+                                    <span class="accent">Margish Patel</span>
+                                </h3>
+                                <p class="quote__college">Currently persuing B.E. (I.T.) At <a href="https://goo.gl/maps/VoAuWApcHdAmeMSy6" class="accent">Aditya silver-oak institute of techhnology</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="callout callout--accent container" id="callout">
+        <div class="grid grid--1x2">
+            <div class="callout__content">
+                <h2 class="callout__heading">Download my resume Here</h2>
+                <p>If failed to Download than you can contact me</p>
+            </div>
+            <a href="./assets/Margish - Resume.pdf" class="btn btn--primary btn--stretched" download>Download</a>
+        </div>
+    </div>
+
+    <footer class="block block--dark footer" id="footer">
+        <div class="container footer__sections">
+            <div class="footer__logo">
+                <a href="#top">
+                    <img class="main-logo" src="/assets/logo2.png" alt="Round logo with letter M and P">
+                </a>
+                <div class="social-links">
+                    <a href="https://instagram.com/margish.patel.3102" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="assets/sprite2.svg#instagram-brands"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Margish287" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="assets/sprite2.svg#github-brands"></use>
+                        </svg>
+                    </a>
+                    <a href="mailto:margishpatel287@gmail.com">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="assets/sprite2.svg#envelope-solid"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/margish-patel/" target="_blank">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="assets/sprite2.svg#linkedin-in-brands"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__copyright">Copyright &copy 2022, Margish Patel</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
